@@ -6,11 +6,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <nav>
-        <span>Doctor Secret Service</span>
-        <a href="/">Sign In</a>
-    </nav>
+<!--<header>-->
+<!--    <nav>-->
+<!--        <span>Doctor Secret Service</span>-->
+<!--        <a href="/">Sign In</a>-->
+<!--    </nav>-->
+<!--</header>-->
+<header th:replace="fragments/header.html :: head">
+    Your header here
 </header>
 <ul class="doctor-list">
     <li><a href="/doctor/?number=1&name=William%20Hartnell">Doctor 1</a></li>
@@ -28,13 +31,16 @@
     <li><a href="/doctor/?number=13&name=Jodie%20Whittaker">Doctor 13</a></li>
     <li><a href="/doctor/">Unknown Doctor</a></li>
 </ul>
-<footer>
-    <ul>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">TARDIS</a></li>
-    </ul>
-    <span>Copyright BBC/Terry Nation 1963</span>
+<!--<footer>-->
+<!--    <ul>-->
+<!--        <li><a href="#">Twitter</a></li>-->
+<!--        <li><a href="#">Facebook</a></li>-->
+<!--        <li><a href="#">TARDIS</a></li>-->
+<!--    </ul>-->
+<!--    <span>Copyright BBC/Terry Nation 1963</span>-->
+<!--</footer>-->
+<footer th:replace="fragments/footer.html :: foot">
+    Your footer here
 </footer>
 </body>
 </html>
